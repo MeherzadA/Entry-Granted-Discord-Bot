@@ -142,4 +142,6 @@ async def hlp(ctx):
 
     
 keep_alive()
+
+# This line of code is linked to a hidden environment variable, since it contains the key to the discord bot lol:
 client.run(os.environ["SUSSY"])        
