@@ -14,11 +14,9 @@ $rqrOG command which gives you the ability to write what you want to have grante
 
 ![image](https://user-images.githubusercontent.com/97406502/156087338-8b08f14a-7b77-47c2-a742-22d0e267fec3.png)
 
-
-![image](https://user-images.githubusercontent.com/97406502/156087829-5e86b67f-a95d-4412-80a2-ea01d40ed547.png)
-
 $hlp command which DMs the user a list of commands available:
 
+![image](https://user-images.githubusercontent.com/97406502/156087829-5e86b67f-a95d-4412-80a2-ea01d40ed547.png)
 ![image](https://user-images.githubusercontent.com/97406502/156087847-bc23972a-964b-442e-8607-e68667bd8487.png)
 
 
