@@ -36,33 +36,10 @@ async def on_message(message): # Callback to when the bot recieves a message FRO
   if message.author == client.user:
     return    ## Makes it so that the bot won't do anything if the message is from the bot itself
   
-  if message.content.startswith("h"): ## If the message starts with "$help"
-    await channel.send("$hi - say hi \n$trash - I dare you to say I'm trash\n$test - Don't wake me up, please. I enjoy my REM\n$qr - doesnt work dont use it")
-
-  if message.content.startswith("$hi"):## If the message starts with "$hello"
-    await channel.send("Sup bro!") ## This is the bot's response if the user sends $hello
-  
-  if message.content.startswith("$trash"): ## If the message starts with "$trash"
-    await channel.send("fuck you too <3") ## This is the bot's response if the user sends "$trash"
-
-  if message.content.startswith("$test"):## If the message starts with "$test"
-    await channel.send("Working! Now let me sleep....")
-
-  if message.content.startswith("$userinputtest"):## If the message starts with "$userinputest"
-    await channel.send("say \"fuck you\"")
-    
-    def check(m):
-      return m.content == ("fuck you") and m.channel == channel ## Checks the content in m is euqal to "fuck you" and also checks to see if it was sent in the same channel where $userinputtest was used"
-    
-    msg = await client.wait_for("message", check = check) ## Telling the bot to wait for the user to send that message, and will then check for check (the function written above)
-    await channel.send("Fuck you too {.author.mention}!".format(msg)) 
 
     
-    
-
-
-
-client = commands.Bot(command_prefix= "$") ## only this command is working, the $help and all the other stuff above is being ignored for some reason... 
+   
+client = commands.Bot(command_prefix= "$") 
 
 
 @client.command(aliases = ["qrrandomOG", "rqrOG", "qrandomOG"])
