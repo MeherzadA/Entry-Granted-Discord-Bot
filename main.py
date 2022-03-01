@@ -32,24 +32,8 @@ async def on_ready():
 @client.event
 async def on_message(message): # Callback to when the bot recieves a message FROM ANYONE 
   channel = message.channel 
-  
-  if message.author == client.user:
-    return    ## Makes it so that the bot won't do anything if the message is from the bot itself
-  
-  if message.content.startswith("h"): ## If the message starts with "$help"
-    await channel.send("$hi - say hi \n$trash - I dare you to say I'm trash\n$test - Don't wake me up, please. I enjoy my REM\n$qr - doesnt work dont use it")
 
-  if message.content.startswith("$hi"):## If the message starts with "$hello"
-    await channel.send("Sup bro!") ## This is the bot's response if the user sends $hello
-  
-
-
-    
-    
-
-
-
-client = commands.Bot(command_prefix= "$") ## only this command is working, the $help and all the other stuff above is being ignored for some reason... 
+client = commands.Bot(command_prefix= "$") 
 
 
 @client.command(aliases = ["qrrandomOG", "rqrOG", "qrandomOG"])
