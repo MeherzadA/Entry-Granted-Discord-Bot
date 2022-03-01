@@ -9,13 +9,6 @@ from datetime import date
 from keep_alive import keep_alive
 import random
 
-## requests module allows bot to make an hhtps request, and retrieve date from the API's
-import requests 
-
-#API returns json, so we need to import this module as well
-import json
-
-
 client = discord.Client()
 
 ## Helper function that we can call upon when we want to retrieve the doggo image from the API 
