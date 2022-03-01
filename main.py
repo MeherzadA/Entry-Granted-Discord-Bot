@@ -30,13 +30,13 @@ client = commands.Bot(command_prefix= "$")
 
 
 @client.command(aliases = ["qrrandomOG", "rqrOG", "qrandomOG"])
-async def randomqrOG(ctx, year, month, day):
+async def randomqrOG(ctx, *text):
   filename = "qrcodetemplatebetter.png"
   img = Image.open(filename)
   font_type = ImageFont.truetype("arial.ttf", 53)
   draw = ImageDraw.Draw(img)
   draw.text(xy=(100, 390), text ="You are granted entry", fill = (51, 62, 63), font = font_type)
-  draw.text(xy=(100, 450), text ="     for: {}-{}-{}".format(year, month, day), fill = (51, 62, 63), font = font_type)
+  draw.text(xy=(100, 450), text =f"     for: {" ".join(text)}", fill = (51, 62, 63), font = font_type)
   img = img.save('new_img.png')
   img
   await ctx.send(file = discord.File('new_img.png'))
