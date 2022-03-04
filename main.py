@@ -68,7 +68,7 @@ async def randomqrOG(ctx, *text):
 @client.event
 async def on_command_error(ctx, error):
   if isinstance(error, commands.MissingRequiredArgument):
-    await ctx.send("Bro, input some more arguments dumbass.\nEx: ``$randomqr yo mama fat``\n``$qr firstname lastname``\nAlso, emojis don't work, so stop trying to use :hot_face: you aren't funny")
+    await ctx.send("Please input some more arguments!\nEx: ``$qr firstname lastname``")
 
 @client.command()
 async def day(ctx):
